@@ -1,0 +1,15 @@
+{
+  "name": "http-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js --port 5000",
+    "dev": "nodemon index.js -e js,html"
+  },
+  "author": "gourav-modi",
+  "license": "ISC",
+  "dependencies": {
+    "minimist": "^1.2.8"
+  }
+}
