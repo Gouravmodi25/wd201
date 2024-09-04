@@ -40,7 +40,7 @@ const todoList = () => {
     let output = "";
     list.forEach((item) => {
       output += `[${item.completed ? "x" : " "}] ${item.title} ${
-        item.dueDate
+        item.dueDate == today ? (item.dueDate = "") : item.dueDate
       }\n`;
     });
     return output;
