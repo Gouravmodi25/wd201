@@ -38,8 +38,8 @@ const todoList = () => {
     // Format the To-Do list here, and return the output string
     // as per the format given above.
     let output = "";
-    list.forEach((item, index) => {
-      output += `${index + 1}. [${item.completed ? "x" : " "}] ${item.title} ${
+    list.forEach((item) => {
+      output += `[${item.completed ? "x" : " "}] ${item.title} ${
         item.dueDate
       }\n`;
     });
