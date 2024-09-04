@@ -1,0 +1,13 @@
+{
+  "name": "todo-cli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "todo.js",
+  "scripts": {
+    "test": "node todo.js",
+    "dev": "nodemon todo.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
