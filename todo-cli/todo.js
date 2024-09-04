@@ -43,7 +43,7 @@ const todoList = () => {
         item.dueDate == today ? (item.dueDate = "") : item.dueDate
       }\n`;
     });
-    return output;
+    return output.trim();
   };
   return {
     all,
