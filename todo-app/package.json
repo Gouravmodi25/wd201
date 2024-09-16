@@ -8,6 +8,12 @@
     "db:create:test": "set NODE_ENV=test npx sequelize-cli db:drop && set NODE_ENV=test npx sequelize-cli db:create",
     "test": "set NODE_ENV=test jest --detectOpenHandles"
   },
+  "lint-staged": {
+    "*.js": [
+      "eslint",
+      "prettier --write ."
+    ]
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -18,6 +24,8 @@
     "sequelize": "^6.37.3"
   },
   "devDependencies": {
+    "lint-staged": "^15.2.10",
+    "prettier": "^3.3.3",
     "sequelize-cli": "^6.6.2"
   }
 }
