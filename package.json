@@ -5,8 +5,8 @@
   "scripts": {
     "prepare": "cd..&&husky install todo-cli/.husky",
     "db:create:test": "SET =test npx sequelize-cli db:create",
-    "pretest": "SET NODE_ENV=test npx sequelize-cli db:drop && NODE_ENV=test npx sequelize-cli db:create",
-    "test": "SET NODE_ENV=test jest --detectOpenHandles"
+    "pretest": "NODE_ENV=test npx sequelize-cli db:drop && NODE_ENV=test npx sequelize-cli db:create",
+    "test": "jest --detectOpenHandles"
   },
   "lint-staged": {
     "*.js": [
